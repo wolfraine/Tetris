@@ -16,7 +16,7 @@ wstêpny play
 */
 
 class game
-	: Board
+	:protected Board
 {
 private:
 	int x = 0;

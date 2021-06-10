@@ -26,6 +26,6 @@ public:
 	virtual ~cell();
 
 	friend class Board;
-	//friend class game;
+	friend class game;
 };
 #endif

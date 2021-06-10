@@ -22,6 +22,6 @@ public:
 	Board();
 	void remove_row();
 	virtual ~Board();
-	friend class game;
+	//friend class game;
 };
 #endif

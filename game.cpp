@@ -27,13 +27,11 @@ void game::play()
 }
 
 
-void game::draw_borad()
+void game::draw_board()
 {
 	system("cls");
-	//petla sprawdza czy pozycja z vektora zgadza siê z pozycj¹ w tablicy
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < witdh; j++) {
-
 			std::cout << main_tab[i][j].type << ' ';
 		}
 		std::cout << std::endl;
