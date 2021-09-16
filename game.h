@@ -7,19 +7,11 @@
 #include <iostream>
 #include <vector>
 
-/*
-06.06.2021:
-wypisywanie tabeli
-wstêpny play
-10.06.2021 - wstêpne sterowanie klawiszami ads, wstêpny chceck
-
-*/
 
 class game
 	:protected Board
 {
 private:
-	int x = 0;
 	//wynik
 	int score = 0;
 	//xx i yy "œrodek planszy" do ustawiania klocków

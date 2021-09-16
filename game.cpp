@@ -15,9 +15,8 @@ game::~game()
 
 void game::play()
 {
-	//std::vector<Piece*> pieces;
-	pieces.push_back(Piece::createRandomPiece());
-	//pieces[0];
+	pieces.push_back(Piece::createRandomPiece(xx, yy));
+	//pieces[];
 	for (;;) {
 		draw_board();
 		//Sleep(400);
@@ -40,6 +39,11 @@ void game::draw_board()
 
 void game::print_piece()
 {
+	pieces[0]->getbody();
+	for (auto point : pieces)
+	{
+		std::cout << body[0] << std::endl;
+	}
 }
 
 bool game::check(int xx, int yy)
@@ -73,7 +77,7 @@ void game::controls()
 		xx += 1;
 	}
 	//pieces.createRandomPiece(xx,yy);
-	//main_tab[xx][yy].type = 'x';//docelowo zmieniæ na obiekt klasy piece
+	//main_tab[xx][yy].type = 'x';
 
 
 }

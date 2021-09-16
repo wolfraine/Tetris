@@ -23,29 +23,37 @@ Piece::Piece(std::vector<cell> body) : body(body)
 {
 }
 
+//Piece get_body() 
+//{
+//	std::vector<cell> body;
+//	return Piece{ body };
+//}
+
 void Piece::fall_down()
 {
 }
 
 void Piece::move_piece(int move_x, int move_y)
 {
+
 }
 
 Piece::~Piece()
 {
 }
 
-Piece* Piece::createRandomPiece()
+
+Piece* Piece::createRandomPiece(int xx, int yy)
 {
 	std::vector<cell> body;
 	piece_type randomType = piece_type (rand() % types);
 	
 	switch (randomType) {
 	case piece_type::s_piece:
-		body = create_SquarePiece(0,10);
+		body = create_SquarePiece(xx, yy);
 		break;
 	case piece_type::t_piece:
-		body = createT_Piece(0,10);
+		body = createT_Piece(xx, yy);
 		break;
 	}
 

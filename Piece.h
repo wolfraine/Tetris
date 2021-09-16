@@ -3,11 +3,7 @@
 #include "Cell.h"
 #include <vector>
 #include <random>
-/*
-10.06.2021 - 
-przebudowa ca³ej klasy piece, metody zosta³y zmodyfikowane,
-dodano vektory z dwoma klockami wybieranymi losowo
-*/
+
 
 enum piece_type {
 	t_piece,
@@ -25,9 +21,10 @@ protected:
 public:
 	Piece(std::vector<cell> body);
 	void fall_down();
-	void get_body();
+	//static Piece get_body();
+	std::vector<cell> getbody() { return body; };
 	void move_piece(int move_x, int move_y);
-	static Piece* createRandomPiece();
+	static Piece* createRandomPiece(int xx, int yy);
 
 	virtual ~Piece();
 	

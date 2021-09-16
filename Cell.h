@@ -1,9 +1,5 @@
 #ifndef CELL_H
 #define CELL_H
-/*
-09.06.2021 - dodanie set_x, set_y, set_type, move_cell, oraz dopisaie ich deklaracji
-19.06.2021 - wygl¹da na wszystko,
-*/
 
 class cell
 {
